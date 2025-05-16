@@ -19,10 +19,8 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <Link href="/">
             <div className="flex items-center space-x-2 cursor-pointer">
-              <motion.img 
-                src="https://cdn.pixabay.com/photo/2012/04/18/14/49/teddy-bear-37030_1280.png" 
-                alt="Essaka Toys Mascot" 
-                className="w-12 h-12 rounded-full shadow-lg"
+              <motion.div
+                className="relative w-12 h-12 bg-gradient-to-r from-[#8B5CF6] to-[#FF6B6B] rounded-full shadow-lg flex items-center justify-center"
                 animate={{ 
                   y: [0, -10, 0],
                   rotate: [0, 5, 0, -5, 0]
@@ -32,8 +30,18 @@ const Header = () => {
                   duration: 3,
                   times: [0, 0.25, 0.5, 0.75, 1]
                 }}
-              />
-              <h1 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#8B5CF6] to-[#FF6B6B] font-heading">Essaka Toys</h1>
+              >
+                <span className="text-white text-2xl font-bold font-heading">E</span>
+                <motion.div 
+                  className="absolute -top-1 -right-1 w-5 h-5 bg-[#FFD166] rounded-full"
+                  animate={{ scale: [1, 1.2, 1] }}
+                  transition={{ repeat: Infinity, duration: 2 }}
+                />
+              </motion.div>
+              <div>
+                <h1 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#8B5CF6] to-[#FF6B6B] font-heading">Essaka Toys</h1>
+                <p className="text-xs text-[#8B5CF6] font-arabic">ألعاب الأطفال - بركيد</p>
+              </div>
             </div>
           </Link>
           
@@ -72,13 +80,13 @@ const Header = () => {
             </motion.button>
             
             <a 
-              href="https://wa.me/+212600000000" 
+              href="https://wa.me/+212650487509" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hidden md:flex items-center space-x-1 bg-[#25D366] text-white px-3 py-2 rounded-full hover:bg-opacity-90 transition"
             >
               <i className="fab fa-whatsapp text-lg"></i>
-              <span className="font-bold text-sm">Contact Us</span>
+              <span className="font-bold text-sm">تواصل معنا</span>
             </a>
           </div>
         </div>

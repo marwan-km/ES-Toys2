@@ -15,17 +15,17 @@ const CartSidebar = ({ isOpen }: CartSidebarProps) => {
     total 
   } = useCart();
   
-  const [whatsappNumber] = useState("+212600000000"); // Replace with your actual WhatsApp number
+  const [whatsappNumber] = useState("+212650487509"); // Berrechid WhatsApp number
   
   const handleWhatsAppOrder = () => {
     // Create message with cart items for WhatsApp
     let message = "Hello! I'd like to order the following items from Essaka Toys:\n\n";
     
     cartItems.forEach(item => {
-      message += `${item.quantity}x ${item.product.name} - $${(item.product.price * item.quantity).toFixed(2)}\n`;
+      message += `${item.quantity}x ${item.product.name} - ${(item.product.price * item.quantity).toFixed(2)} MAD\n`;
     });
     
-    message += `\nTotal: $${total.toFixed(2)}`;
+    message += `\nTotal: ${total.toFixed(2)} MAD`;
     
     // Encode the message for URL
     const encodedMessage = encodeURIComponent(message);
@@ -99,7 +99,7 @@ const CartSidebar = ({ isOpen }: CartSidebarProps) => {
                   >
                     <div className="flex justify-between mb-2">
                       <span className="font-bold text-[#8B5CF6]">Subtotal:</span>
-                      <span className="font-bold">${subtotal.toFixed(2)}</span>
+                      <span className="font-bold" dir="rtl">{subtotal.toFixed(2)} MAD</span>
                     </div>
                     <div className="flex justify-between mb-2">
                       <span className="font-bold text-[#8B5CF6]">Shipping:</span>
@@ -107,7 +107,7 @@ const CartSidebar = ({ isOpen }: CartSidebarProps) => {
                     </div>
                     <div className="flex justify-between text-xl mt-4">
                       <span className="font-bold text-[#8B5CF6]">Total:</span>
-                      <span className="font-bold text-[#FF6B6B]">${total.toFixed(2)}</span>
+                      <span className="font-bold text-[#FF6B6B]" dir="rtl">{total.toFixed(2)} MAD</span>
                     </div>
                   </motion.div>
                   
