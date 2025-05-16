@@ -1,0 +1,66 @@
+Create a dynamic toy store website that showcases 20 different toy products. The website should be designed to appeal both to kids and their parents, with a colorful, fun, and modern look that stands out from typical stores. It should not use any backend or database — all data should be stored locally in the front-end (e.g., in a JSON file or state).
+
+Requirements:
+
+Homepage / Product Listing:
+
+Display 20 toy products with images, names, short descriptions, and prices.
+
+Each product card should be colorful and playful, incorporating fun fonts, bright colors, and engaging hover effects.
+
+Products should be dynamically rendered from a local array or JSON data (no backend).
+
+Include “Add to Cart” buttons on each product.
+
+Cart Functionality:
+
+A simple cart that updates live on the client side.
+
+Show a cart icon with the number of items added.
+
+A cart page or sidebar showing the selected items, quantity, and total price.
+
+Allow users to increase/decrease quantity or remove items.
+
+Design:
+
+Use bright pastel colors or primary colors (reds, blues, yellows).
+
+Fun, rounded shapes and cartoonish illustrations or icons.
+
+Large, readable fonts suitable for kids and parents.
+
+Responsive design for mobile and desktop.
+
+Footer:
+
+Reserve a clean footer space with placeholders to add social media links, newsletter signup, or contact info in the future.
+
+The footer background can be a soft color with playful icons or small graphics.
+
+Bonus:
+
+Add a playful mascot or character somewhere on the site (like a cartoon toy or mascot icon).
+
+Simple animations on buttons or product cards (e.g., bounce, scale on hover).
+
+A search bar or filter by toy category (optional).
+
+Tech stack:
+
+React (functional components, hooks)
+
+CSS (or TailwindCSS for easy styling)
+
+Local state or JSON data for products and cart
+
+Deliverables:
+
+Fully functional front-end with 20 products shown dynamically.
+
+Cart functionality working fully on client-side.
+
+Attractive, colorful, and modern design tailored for kids and parents.
+
+Footer with placeholders for future content.
+
