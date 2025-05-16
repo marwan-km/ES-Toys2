@@ -56,8 +56,10 @@ const CartSidebar = ({ isOpen }: CartSidebarProps) => {
           >
             <div className="p-6">
               <div className="flex justify-between items-center mb-6">
-                <h2 className="text-2xl font-bold font-heading text-[#8B5CF6]">
-                  Your Toy Box <i className="fas fa-shopping-cart text-[#FF6B6B] animate-bounce"></i>
+                <h2 className="text-2xl font-bold font-heading text-[#8B5CF6] flex items-center">
+                  <span>Your Toy Box</span> 
+                  <span className="mx-2 font-arabic text-lg">سلة الألعاب</span>
+                  <i className="fas fa-shopping-cart text-[#FF6B6B] animate-bounce"></i>
                 </h2>
                 <button 
                   className="text-neutral-800 hover:text-[#FF6B6B] transition"
@@ -117,7 +119,8 @@ const CartSidebar = ({ isOpen }: CartSidebarProps) => {
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
-                    <i className="fab fa-whatsapp text-2xl mr-2"></i> Order via WhatsApp
+                    <i className="fab fa-whatsapp text-2xl mr-2"></i> 
+                    <span className="font-arabic">طلب عبر واتساب</span>
                   </motion.a>
                   
                   <motion.button 
@@ -125,7 +128,7 @@ const CartSidebar = ({ isOpen }: CartSidebarProps) => {
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
-                    Checkout Now <i className="fas fa-arrow-right ml-2"></i>
+                    <span className="font-arabic">إتمام الشراء</span> <i className="fas fa-arrow-right ml-2"></i>
                   </motion.button>
                   
                   <motion.button 
@@ -134,7 +137,7 @@ const CartSidebar = ({ isOpen }: CartSidebarProps) => {
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
-                    Continue Shopping
+                    <span className="font-arabic">مواصلة التسوق</span>
                   </motion.button>
                 </>
               )}

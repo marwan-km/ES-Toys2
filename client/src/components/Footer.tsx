@@ -19,14 +19,16 @@ const Footer = () => {
         >
           <motion.div variants={fadeInUp}>
             <div className="flex items-center space-x-2 mb-4">
-              <img 
-                src="https://cdn.pixabay.com/photo/2012/04/18/14/49/teddy-bear-37030_1280.png" 
-                alt="Essaka Toys Mascot" 
-                className="w-10 h-10 rounded-full"
-              />
-              <h3 className="text-2xl font-bold text-[#FF6B6B] font-heading">Essaka Toys</h3>
+              <div className="relative w-10 h-10 bg-gradient-to-r from-[#8B5CF6] to-[#FF6B6B] rounded-full flex items-center justify-center">
+                <span className="text-white text-xl font-bold font-heading">E</span>
+                <div className="absolute -top-1 -right-1 w-4 h-4 bg-[#FFD166] rounded-full"></div>
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-[#FF6B6B] font-heading">Essaka Toys</h3>
+                <p className="text-xs text-gray-400 font-arabic">ألعاب الأطفال - بركيد</p>
+              </div>
             </div>
-            <p className="text-gray-400 mb-4">Bringing joy and imagination to kids everywhere with our colorful toy collection.</p>
+            <p className="text-gray-400 mb-4">نجلب الفرح والخيال للأطفال في كل مكان مع مجموعة ألعابنا الملونة.</p>
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-[#FF6B6B] transition" aria-label="Facebook">
                 <i className="fab fa-facebook text-xl"></i>
@@ -46,39 +48,47 @@ const Footer = () => {
           <motion.div variants={fadeInUp}>
             <h4 className="text-xl font-bold font-heading mb-4">Shop</h4>
             <ul className="space-y-2">
-              <li><Link href="/"><a className="text-gray-400 hover:text-[#FF6B6B] transition">All Toys</a></Link></li>
-              <li><Link href="/"><a className="text-gray-400 hover:text-[#FF6B6B] transition">New Arrivals</a></Link></li>
-              <li><Link href="/"><a className="text-gray-400 hover:text-[#FF6B6B] transition">Best Sellers</a></Link></li>
-              <li><Link href="/"><a className="text-gray-400 hover:text-[#FF6B6B] transition">Age Groups</a></Link></li>
-              <li><Link href="/"><a className="text-gray-400 hover:text-[#FF6B6B] transition">Special Offers</a></Link></li>
+              <li><span className="text-gray-400 hover:text-[#FF6B6B] transition cursor-pointer">All Toys</span></li>
+              <li><span className="text-gray-400 hover:text-[#FF6B6B] transition cursor-pointer">New Arrivals</span></li>
+              <li><span className="text-gray-400 hover:text-[#FF6B6B] transition cursor-pointer">Best Sellers</span></li>
+              <li><span className="text-gray-400 hover:text-[#FF6B6B] transition cursor-pointer">Age Groups</span></li>
+              <li><span className="text-gray-400 hover:text-[#FF6B6B] transition cursor-pointer">Special Offers</span></li>
             </ul>
           </motion.div>
           
           <motion.div variants={fadeInUp}>
             <h4 className="text-xl font-bold font-heading mb-4">Help</h4>
             <ul className="space-y-2">
-              <li><Link href="/"><a className="text-gray-400 hover:text-[#FF6B6B] transition">Contact Us</a></Link></li>
-              <li><Link href="/"><a className="text-gray-400 hover:text-[#FF6B6B] transition">Shipping Policy</a></Link></li>
-              <li><Link href="/"><a className="text-gray-400 hover:text-[#FF6B6B] transition">Returns & Exchanges</a></Link></li>
-              <li><Link href="/"><a className="text-gray-400 hover:text-[#FF6B6B] transition">FAQ</a></Link></li>
-              <li><Link href="/"><a className="text-gray-400 hover:text-[#FF6B6B] transition">Privacy Policy</a></Link></li>
+              <li><span className="text-gray-400 hover:text-[#FF6B6B] transition cursor-pointer">Contact Us</span></li>
+              <li><span className="text-gray-400 hover:text-[#FF6B6B] transition cursor-pointer">Shipping Policy</span></li>
+              <li><span className="text-gray-400 hover:text-[#FF6B6B] transition cursor-pointer">Returns & Exchanges</span></li>
+              <li><span className="text-gray-400 hover:text-[#FF6B6B] transition cursor-pointer">FAQ</span></li>
+              <li><span className="text-gray-400 hover:text-[#FF6B6B] transition cursor-pointer">Privacy Policy</span></li>
             </ul>
           </motion.div>
           
           <motion.div variants={fadeInUp}>
-            <h4 className="text-xl font-bold font-heading mb-4">Contact</h4>
+            <h4 className="text-xl font-bold font-heading mb-4 flex items-center">
+              <span>Contact</span>
+              <span className="ml-2 font-arabic">اتصل بنا</span>
+            </h4>
             <ul className="space-y-2">
               <li className="flex items-center text-gray-400">
                 <i className="fas fa-map-marker-alt mr-2 text-[#FF6B6B]"></i>
-                123 Toy Lane, Playland, PL 12345
+                <span>Berrechid, Morocco</span>
+                <span className="mr-2 font-arabic text-sm text-gray-300"> - بركيد، المغرب</span>
               </li>
               <li className="flex items-center text-gray-400">
                 <i className="fas fa-phone mr-2 text-[#FF6B6B]"></i>
-                (123) 456-7890
+                <a href="tel:+212650487509" className="hover:text-[#FF6B6B]">+212 650-487509</a>
               </li>
               <li className="flex items-center text-gray-400">
                 <i className="fas fa-envelope mr-2 text-[#FF6B6B]"></i>
-                hello@essakatoys.com
+                <a href="mailto:essaka.gmail.com" className="hover:text-[#FF6B6B]">essaka.gmail.com</a>
+              </li>
+              <li className="flex items-center text-gray-400">
+                <i className="fab fa-whatsapp mr-2 text-[#25D366]"></i>
+                <a href="https://wa.me/+212650487509" target="_blank" rel="noopener noreferrer" className="hover:text-[#25D366]">WhatsApp Chat</a>
               </li>
             </ul>
           </motion.div>
@@ -93,9 +103,9 @@ const Footer = () => {
         >
           <p className="text-gray-400 text-center md:text-left">© {new Date().getFullYear()} Essaka Toys. All rights reserved.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
-            <Link href="/"><a className="text-gray-400 hover:text-[#FF6B6B] transition">Terms</a></Link>
-            <Link href="/"><a className="text-gray-400 hover:text-[#FF6B6B] transition">Privacy</a></Link>
-            <Link href="/"><a className="text-gray-400 hover:text-[#FF6B6B] transition">Cookies</a></Link>
+            <span className="text-gray-400 hover:text-[#FF6B6B] transition cursor-pointer">Terms</span>
+            <span className="text-gray-400 hover:text-[#FF6B6B] transition cursor-pointer ml-4">Privacy</span>
+            <span className="text-gray-400 hover:text-[#FF6B6B] transition cursor-pointer ml-4">Cookies</span>
           </div>
         </motion.div>
       </div>
