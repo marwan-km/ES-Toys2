@@ -22,7 +22,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-gradient-to-r from-[#8B5CF6]/10 to-[#FF6B6B]/10 dark:from-[#4C1D95]/20 dark:to-[#991B1B]/20 shadow-md sticky top-0 z-50 transition-colors duration-300">
+    <header className="bg-white dark:bg-gray-900 shadow-md sticky top-0 z-50 transition-colors duration-300">
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
           <Link href="/">
@@ -56,7 +56,7 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <button
               onClick={() => setDarkMode(!darkMode)}
-              className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+              className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
               aria-label="Toggle dark mode"
             >
               {darkMode ? (
@@ -71,7 +71,7 @@ const Header = () => {
                 <input
                   type="text"
                   placeholder="Search toys..."
-                  className="pl-10 pr-4 py-2 bg-white dark:bg-gray-800 rounded-full border-2 border-[#8B5CF6] dark:border-[#4C1D95] focus:outline-none focus:ring-2 focus:ring-[#FF6B6B] dark:focus:ring-[#991B1B] transition text-gray-900 dark:text-white"
+                  className="pl-10 pr-4 py-2 bg-gray-50 dark:bg-gray-800 rounded-full border-2 border-[#8B5CF6] dark:border-[#4C1D95] focus:outline-none focus:ring-2 focus:ring-[#FF6B6B] dark:focus:ring-[#991B1B] transition text-gray-900 dark:text-white"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />
