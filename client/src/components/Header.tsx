@@ -100,7 +100,7 @@ const Header = () => {
             </motion.button>
 
             <a
-              href="https://wa.me/+212650487509"
+              href="https://wa.me/+212650467509"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:flex items-center space-x-1 bg-[#25D366] text-white px-3 py-2 rounded-full hover:bg-opacity-90 transition"
