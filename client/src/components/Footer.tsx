@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className="bg-neutral-800 text-white py-12">
       <div className="container mx-auto px-4">
-        <motion.div 
+        <motion.div
           className="grid grid-cols-1 md:grid-cols-4 gap-8"
           initial="hidden"
           whileInView="visible"
@@ -44,7 +44,7 @@ const Footer = () => {
               </a>
             </div>
           </motion.div>
-          
+
           <motion.div variants={fadeInUp}>
             <h4 className="text-xl font-bold font-heading mb-4">Shop</h4>
             <ul className="space-y-2">
@@ -55,7 +55,7 @@ const Footer = () => {
               <li><span className="text-gray-400 hover:text-[#FF6B6B] transition cursor-pointer">Special Offers</span></li>
             </ul>
           </motion.div>
-          
+
           <motion.div variants={fadeInUp}>
             <h4 className="text-xl font-bold font-heading mb-4">Help</h4>
             <ul className="space-y-2">
@@ -66,7 +66,7 @@ const Footer = () => {
               <li><span className="text-gray-400 hover:text-[#FF6B6B] transition cursor-pointer">Privacy Policy</span></li>
             </ul>
           </motion.div>
-          
+
           <motion.div variants={fadeInUp}>
             <h4 className="text-xl font-bold font-heading mb-4 flex items-center">
               <span>Contact</span>
@@ -80,7 +80,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center text-gray-400">
                 <i className="fas fa-phone mr-2 text-[#FF6B6B]"></i>
-                <a href="tel:+212650487509" className="hover:text-[#FF6B6B]">+212 650-487509</a>
+                <a href="tel:+212650467509" className="hover:text-[#FF6B6B]">+212 650-467509</a>
               </li>
               <li className="flex items-center text-gray-400">
                 <i className="fas fa-envelope mr-2 text-[#FF6B6B]"></i>
@@ -88,13 +88,13 @@ const Footer = () => {
               </li>
               <li className="flex items-center text-gray-400">
                 <i className="fab fa-whatsapp mr-2 text-[#25D366]"></i>
-                <a href="https://wa.me/+212650487509" target="_blank" rel="noopener noreferrer" className="hover:text-[#25D366]">WhatsApp Chat</a>
+                <a href="https://wa.me/+212650467509" target="_blank" rel="noopener noreferrer" className="hover:text-[#25D366]">WhatsApp Chat</a>
               </li>
             </ul>
           </motion.div>
         </motion.div>
-        
-        <motion.div 
+
+        <motion.div
           className="border-t border-gray-800 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center"
           variants={fadeInUp}
           initial="hidden"
